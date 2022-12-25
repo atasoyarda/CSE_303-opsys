@@ -3,6 +3,9 @@ import java.io.FileReader;
 import java.util.*;
 
 public class c20180808045 {
+    /**
+     * @author Arda Atasoy 20180808045
+     */
     public static void main(String[] args) {
         List<Integer> processIds = new ArrayList<>();
         LinkedHashMap<Integer, int[]> processReturns = new LinkedHashMap<>();
@@ -38,7 +41,7 @@ public class c20180808045 {
         int idle = 0;
         int totalTurnRoundTimes=0;
         int totalWaitTimes=0;
-        //Collections.sort(processIds);
+        Collections.sort(processIds);
         while (!processIds.isEmpty()) {
             currentId = currentId % processIds.size();
             int processId = processIds.get(currentId);
